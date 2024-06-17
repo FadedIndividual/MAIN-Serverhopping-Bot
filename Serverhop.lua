@@ -1,7 +1,12 @@
 local Seconds_Last = (math.random(1, 2) == 1) and 300 or 500
 
 spawn(function()
-	wait(Seconds_Last)
+	for i = 1, Seconds_Last do
+		if #game.Players:GetPlayers() >= 6 then
+			break
+		end
+		wait((math.random(1, 2)==1 and .95 or .75))
+	end
 	local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
 	local servers = {}
 	local req = httprequest({Url = string.format("https://games.roblox.com/v1/games/%d/servers/Public?sortOrder=Desc&limit=100&excludeFullGames=true", game.PlaceId)})

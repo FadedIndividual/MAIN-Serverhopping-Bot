@@ -1,9 +1,11 @@
 local Players = game.Players
 local lp = Players.LocalPlayer
+
+local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 lp.OnTeleport:Connect(function() queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/jaded.lua'))()") end)
+
 local Seconds = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/Serverhop.lua'))()
 local tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/STRINGS.lua'))()
-local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 local Time = 6
 local tik = tick()
 local tiktok = tick()

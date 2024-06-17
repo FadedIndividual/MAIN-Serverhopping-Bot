@@ -63,10 +63,10 @@ Funk = function(pqs, Original)
 		repeat task.wait()
 			pcall(function()
 				num = num + 10
-				local Ours, Theirs = lp.Character:FindFirstChild("HumanoidRootPart"), pqs.Character:FindFirstChild("HumanoidRootPart")
+				local Ours, Theirs = lp.Character:FindFirstChild("HumanoidRootPart"), pqs.Character:FindFirstChild("Torso") or pqs.Character:FindFirstChild("Upper Torso")
 				
 				if Ours and Theirs then
-					Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(0), 0) * CFrame.new(0, 0, math.random(-2, 2))
+					Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(num), 0) * CFrame.new(0, 0, 2)
 				end
 			end)
 		until not pqs.Character or pqs.Character:FindFirstChild("Humanoid").Health <= 1.5 or not pqs.Character:FindFirstChild("HumanoidRootPart") or (pqs.Character:FindFirstChild("HumanoidRootPart").Position - Original).Magnitude >= 7 or tick() - timeee >= 15

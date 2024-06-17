@@ -6,9 +6,7 @@ lp.OnTeleport:Connect(function() queueteleport("loadstring(game:HttpGet('https:/
 
 local Seconds = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/Serverhop.lua'))()
 local tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/STRINGS.lua'))()
-local Time = 6
-local tik = tick()
-local tiktok = tick()
+local Tick, tik, tiktok = tick(), tick(), tick()
 
 function chatMessage(str)
     str = tostring(str)
@@ -52,17 +50,19 @@ end
 
 spawn(function()
 	while task.wait() do
-		if tick() - tiktok >= 2 then
-			tiktok = tick()
+		if tick() - tiktok >= 2 then tiktok = tick()
 			pcall(function()
 				lp.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
 			end)
 		end
-		if tick()-tik >= Time then tik = tick()
-			local rnp = tablef[math.random(1, #tablef)]
+		if tick()-tik >= 6 then tik = tick()
+			local rnp = [math.random(1, #tablef)]
 			for _, z in pairs(rnp) do
 				chatMessage(z)
 			end
+		end
+		if tick() - Tick >= 20 then Tick = tick()
+			tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/STRINGS.lua'))()
 		end
 	end
 end)

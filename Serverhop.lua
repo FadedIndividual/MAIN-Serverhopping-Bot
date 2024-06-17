@@ -2,7 +2,7 @@ local Seconds_Last = (math.random(1, 2) == 1) and 300 or 500
 
 spawn(function()
 	for i = 1, Seconds_Last do
-		if #game.Players:GetPlayers() >= 6 then
+		if #game.Players:GetPlayers() <= 6 then
 			break
 		end
 		wait((math.random(1, 2)==1 and .95 or .75))

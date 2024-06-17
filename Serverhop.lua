@@ -1,5 +1,3 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/jaded.lua'))()
-
 local Seconds_Last = (math.random(1, 7) >= 4) and 300 or 340
 
 spawn(function()

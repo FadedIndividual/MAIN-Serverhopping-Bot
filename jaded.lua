@@ -1,5 +1,15 @@
 local Players = game.Players
 local lp = Players.LocalPlayer
+local Seconds = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/Serverhop.lua'))()
+local tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/STRINGS.lua'))()
+local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
+local Time = 6
+local tik = tick()
+local tiktok = tick()
+
+lp.OnTeleport:Connect(function()
+	queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/jaded.lua'))()")
+end)
 
 function chatMessage(str)
     str = tostring(str)
@@ -10,51 +20,16 @@ function chatMessage(str)
     end
 end
 
-local Seconds = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/Serverhop.lua'))()
-local tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/STRINGS.lua'))()
-
-local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
-
-lp.OnTeleport:Connect(function()
-	queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/jaded.lua'))()")
-end)
-
-local amount = 2
-local Time = 6
-local Tick = tick()
-local tik = tick()
-local tiktok = tick()
-spawn(function()
-	while task.wait() do
-		if tick()-tik >= Time then tik = tick()
-			local rnp = tablef[math.random(1, #tablef)]
-			for _, z in pairs(rnp) do
-				chatMessage(z)
-			end
+Funk_RV = function()
+	for _,z in pairs(lp.Character:GetChildren()) do
+		if z:IsA'BasePart' then
+			z.Velocity = Vector3.zero
+			z.RotVelocity = Vector3.zero
+			z.Massless = true
+			z.CanCollide = false
 		end
 	end
-end)
-
-spawn(function()
-	while task.wait() do
-		pcall(function()
-			for _,z in next, lp.Character:GetChildren() do
-				if z:IsA'BasePart' then
-					z.Velocity = Vector3.zero
-					z.RotVelocity = Vector3.zero
-					z.Massless = true
-					z.CanCollide = false
-				end
-			end
-		end)
-		if tick() - tiktok >= 2 then
-			tiktok = tick()
-			pcall(function()
-				lp.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
-			end)
-		end
-	end
-end)
+end
 
 Funk = function(pqs, Original)
 	if pqs and pqs.Character and pqs.Character.Humanoid and pqs.Character.Humanoid.Health >= 1.5 then
@@ -66,7 +41,7 @@ Funk = function(pqs, Original)
 				local Ours, Theirs = lp.Character:FindFirstChild("HumanoidRootPart"), pqs.Character:FindFirstChild("HumanoidRootPart")
 				
 				if Ours and Theirs then
-					Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(num), 0) * CFrame.new(0, 0, 2)
+					spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(num), 0) * CFrame.new(0, 0, 2) spawn(Funk_RV)
 				end
 			end)
 		until not pqs or not pqs.Character or pqs.Character:FindFirstChild("Humanoid").Health <= 1.5 or not pqs.Character:FindFirstChild("HumanoidRootPart") or (pqs.Character:FindFirstChild("HumanoidRootPart").Position - Original).Magnitude >= 7 or tick() - timeee >= 15
@@ -75,6 +50,23 @@ Funk = function(pqs, Original)
 		return
 	end
 end
+
+spawn(function()
+	while task.wait() do
+		if tick() - tiktok >= 2 then
+			tiktok = tick()
+			pcall(function()
+				lp.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
+			end)
+		end
+		if tick()-tik >= Time then tik = tick()
+			local rnp = tablef[math.random(1, #tablef)]
+			for _, z in pairs(rnp) do
+				chatMessage(z)
+			end
+		end
+	end
+end)
 
 spawn(function()
 	while task.wait() do

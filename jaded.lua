@@ -69,7 +69,8 @@ Funk = function(pqs, Original)
 					Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(num), 0) * CFrame.new(0, 0, 2)
 				end
 			end)
-		until not pqs.Character or pqs.Character:FindFirstChild("Humanoid").Health <= 1.5 or not pqs.Character:FindFirstChild("HumanoidRootPart") or (pqs.Character:FindFirstChild("HumanoidRootPart").Position - Original).Magnitude >= 7 or tick() - timeee >= 15
+		until not pqs or not pqs.Character or pqs.Character:FindFirstChild("Humanoid").Health <= 1.5 or not pqs.Character:FindFirstChild("HumanoidRootPart") or (pqs.Character:FindFirstChild("HumanoidRootPart").Position - Original).Magnitude >= 7 or tick() - timeee >= 15
+		return
 	else
 		return
 	end
@@ -81,7 +82,9 @@ spawn(function()
 			if z~=lp and not table.find({186860567}, z.UserId) then
 				if z.Character and z.Character:FindFirstChild("HumanoidRootPart") then
 					local Pos_Saved = z.Character:FindFirstChild("HumanoidRootPart").Position
-					Funk(z, Pos_Saved)
+					pcall(function()
+						Funk(z, Pos_Saved)
+					end)
 				end
 			end
 		end

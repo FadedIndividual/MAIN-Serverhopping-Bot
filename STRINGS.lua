@@ -16,8 +16,8 @@ local Table={
 		"LOOOOOOOOOOL"
 	},
 	{
-		"Hello, what an awfully good morning today!",
-		"eekbarbadorkle eekbarbadorkle eekbarbadorkle"
+		"-BLUE GHOST APP-  |  -BLUE GHOST APP-  |  -BLUE GHOST APP-  |  -BLUE GHOST APP-  |  -BLUE GHOST APP-  |  -BLUE GHOST APP-  |  -BLUE GHOST APP-",
+		"@ready41"
 	}
 }
 return Table

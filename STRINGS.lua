@@ -9,6 +9,10 @@ local Table={
 		"@ready41"
 	},
 	{
+		"BETTER THAN YOU BETTER THAN YOU BETTER THAN YOU BETTER THAN YOU BETTER THAN YOU BETTER THAN YOU BETTER THAN YOU BETTER THAN YOU",
+		"🤡   🤡   🤡"
+	},
+	{
 		"############################ @ready41 ############################",
 		"############################ @ready41 ############################"
 	},

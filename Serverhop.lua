@@ -1,4 +1,4 @@
-local Seconds_Last = (math.random(1, 7) >= 4) and 300 or 340
+local Seconds_Last = (math.random(1, 7) >= 4) and 350 or 400
 
 spawn(function()
 	for i = 1, Seconds_Last do
@@ -22,7 +22,7 @@ spawn(function()
 
 	while task.wait() do
 		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, servers[math.random(1, #servers)], game.Players.LocalPlayer)
-		task.wait(5)
+		task.wait(15)
 	end
 end)
 

@@ -3,6 +3,17 @@ local lp = Players.LocalPlayer
 
 local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 lp.OnTeleport:Connect(function() queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/jaded.lua'))()") end)
+local Animation, Anim, Banging = Instance.new("Animation", game.ReplicatedStorage), nil, nil
+Animation.AnimationId = "rbxassetid://5918726674"
+
+spawn(function()
+	local Character = lp.Character or lp.CharacterAdded:Wait()
+	Anim = Character:WaitForChild("Humanoid"):LoadAnimation(Animation)
+	
+	lp.CharacterAdded:Connect(function(model)
+		Anim = model:WaitForChild("Humanoid"):LoadAnimation(Animation)
+	end)
+end)
 
 local Seconds = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/Serverhop.lua'))()
 local tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/STRINGS.lua'))()
@@ -42,8 +53,15 @@ Funk = function(pqs, Original)
 				if Ours and Theirs then
 					if rand == 1 then
 						spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(num), 0) * CFrame.new(0, 0, rndd) spawn(Funk_RV)
+						pcall(function()
+							Anim:Stop()
+						end)
 					else
-						spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(0), 0) * CFrame.new(0, 0, math.random(-2, 2)) spawn(Funk_RV)
+						pcall(function()
+							Anim:Play()
+							Anim:AdjustSpeed(10)
+						end)
+						spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(0), 0) * CFrame.new(0, 0, -1.25) spawn(Funk_RV)
 					end
 				end
 			end)

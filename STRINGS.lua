@@ -21,8 +21,8 @@ local Table={
 		"LOOOOOOOOOOL"
 	},
 	{
-		"-|Blue|- -|Ghost|- -|App|-",
-		"@ready41 - - - - - @ready41"
+		"-|BLUE|- -|Ghost|- -|App|-",
+		"- - @ready41 - -"
 	}
 }
 return Table

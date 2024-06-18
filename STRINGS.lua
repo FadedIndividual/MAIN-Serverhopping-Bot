@@ -9,12 +9,8 @@ local Table={
 		"@ready41"
 	},
 	{
-		"B R O K E B R O K E B R O K E",
-		"🤡   🤡   🤡   🤡   🤡   🤡"
-	},
-	{
-		"############################ @ready41 ############################",
-		"############################ @ready41 ############################"
+		"HEY! If anyone wants to add something to say GO AHEAD AND ADD!",
+		"@ ready41"
 	},
 	{
 		"you're weird",

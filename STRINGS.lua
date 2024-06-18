@@ -23,6 +23,10 @@ local Table={
 	{
 		"-|BLUE|- -|Ghost|- -|App|-",
 		"- - @ready41 - -"
+	},
+	{
+		"P  E  O  N",
+		"P  E  O  N"
 	}
 }
 return Table

@@ -19,6 +19,10 @@ local Table={
 	{
 		"-|BLUE|- -|Ghost|- -|App|-",
 		"- - @ready41 - -"
+	},
+	{
+		"🤡 you are a clown 🤡",
+		"@ ready41"
 	}
 }
 return Table

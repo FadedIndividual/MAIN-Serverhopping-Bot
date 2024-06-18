@@ -1,7 +1,7 @@
 local Table={
 	{
-		"############################################################################### @ready41 ##############################################################################",
-		"################ @ready41 ################ @ready41 ################ @ready41 ################ @ready41 ################ @ready41 ################ @ready41 ################"
+		"-- -- -- -- -- -- -- -- ready41 - -- -- -- -- -- -- -",
+		"-- -- -- -- -- -- -- - made this -- -- -- -- -- -- --"
 	},
 	{
 		"@ready41",
@@ -16,8 +16,8 @@ local Table={
 		"LOOOOOOOOOOL"
 	},
 	{
-		"-BLUE GHOST APP-",
-		"-BLUE GHOST APP-"
+		"Hello, what an awfully good morning today!",
+		"eekbarbadorkle eekbarbadorkle eekbarbadorkle"
 	}
 }
 return Table

@@ -9,7 +9,7 @@ local Table={
 		"@ready41"
 	},
 	{
-		"I'm Better I'm Better I'm Better I'm Better I'm Better I'm Better I'm Better I'm Better I'm Better I'm Better",
+		"P E O N P E O N P E O N",
 		"🤡   🤡   🤡"
 	},
 	{

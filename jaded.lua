@@ -51,7 +51,7 @@ end
 
 spawn(function()
 	while task.wait() do
-		if tick() - tiktok >= 2 then tiktok = tick()
+		if tick() - tiktok >= 1 then tiktok = tick()
 			pcall(function()
 				lp.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
 			end)

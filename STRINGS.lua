@@ -16,8 +16,8 @@ local Table={
 		"LOOOOOOOOOOL"
 	},
 	{
-		"I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice! I'm nice!",
-		"-BLUE GHOST- APP | | @ready41 | | -BLUE GHOST- APP | | @ready41 | | -BLUE GHOST- APP | | @ready41 | | -BLUE GHOST- APP | | @ready41 | | -BLUE GHOST- APP | | @ready41"
+		"-BLUE GHOST APP-",
+		"-BLUE GHOST APP-"
 	}
 }
 return Table

@@ -61,7 +61,7 @@ Funk = function(pqs, Original)
 							Anim:Play()
 							Anim:AdjustSpeed(10)
 						end)
-						spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(0), 0) * CFrame.new(0, 2, .85) spawn(Funk_RV)
+						spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(0), 0) * CFrame.new(0, -1, .85) spawn(Funk_RV)
 					end
 				end
 			end)

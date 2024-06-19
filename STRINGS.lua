@@ -14,7 +14,7 @@ local Table={
 	},
 	{
 		"-|BLUE|- -|Ghost|- -|App|-",
-		"- - @ready41 - -"
+		"_  _  _ @ready41 _  _  _"
 	},
 	{
 		"I'll include whatever you want to say!",

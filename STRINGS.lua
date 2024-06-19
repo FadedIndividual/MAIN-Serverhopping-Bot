@@ -14,7 +14,7 @@ local Table={
 	},
 	{
 		"-|BLUE|- -|Ghost|- -|App|-",
-		"bobux $4/1k  |  @NETSPEND123"
+		"@NETSPEND123  !w/  A DEAL!   4$ / 1k BOBUX!"
 	}
 }
 return Table

@@ -1,11 +1,11 @@
-local Seconds_Last = (math.random(1, 7) >= 4) and 350 or 400
+local Seconds_Last = (math.random(1, 7) >= 4) and 400 or 425
 
 spawn(function()
 	for i = 1, Seconds_Last do
 		if #game.Players:GetPlayers() <= 5 then
 			break
 		end
-		wait((math.random(1, 2)==1 and .95 or .75))
+		wait((math.random(1, 2)==1 and .8 or 1.1))
 	end
 	local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
 	local servers = {}

@@ -20,9 +20,11 @@ spawn(function()
 		end
 	end
 
+	game.Players.LocalPlayer:Kick("\n\nLoading New Server...\n\n")
+
 	while task.wait() do
 		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, servers[math.random(1, #servers)], game.Players.LocalPlayer)
-		task.wait(20)
+		task.wait(7)
 	end
 end)
 

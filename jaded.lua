@@ -44,10 +44,11 @@ Funk = function(pqs, Original)
 		local num = 0
 		local rndd = math.random(1, 5)
 		local rand = math.random(1, 3)
+		local rng = math.random(8, 25)
 		local timeee = tick()
 		repeat task.wait()
 			pcall(function()
-				num = num + 10
+				num = num + rng
 				local Ours, Theirs = lp.Character:FindFirstChild("HumanoidRootPart"), pqs.Character:FindFirstChild("HumanoidRootPart")
 				
 				if Ours and Theirs then

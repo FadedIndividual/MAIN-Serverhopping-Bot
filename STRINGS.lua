@@ -1,4 +1,4 @@
-setfpscap(22)
+setfpscap(18)
 local Table={
 	{
 		"-- -- -- -- -- -- -- -- ready41 - -- -- -- -- -- -- -",
@@ -11,10 +11,6 @@ local Table={
 	{
 		"-|BLUE|- -|Ghost|- -|App|-",
 		"- - @ready41 - -"
-	},
-	{
-		"-|BLUE|- -|Ghost|- -|App|-",
-		"@NETSPEND123  !w/  A DEAL!   4$ / 1k BOBUX!"
 	}
 }
 return Table

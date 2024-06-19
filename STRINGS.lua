@@ -1,4 +1,4 @@
-setfpscap(18)
+setfpscap(22)
 local Table={
 	{
 		"-- -- -- -- -- -- -- -- ready41 - -- -- -- -- -- -- -",

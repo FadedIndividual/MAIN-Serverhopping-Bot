@@ -24,7 +24,7 @@ spawn(function()
 
 	while task.wait() do
 		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, servers[math.random(1, #servers)], game.Players.LocalPlayer)
-		task.wait(7)
+		task.wait(12)
 	end
 end)
 

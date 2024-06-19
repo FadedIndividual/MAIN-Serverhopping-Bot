@@ -1,7 +1,7 @@
 setfpscap(18)
 local Table={
 	{
-		"Would you like to Advertise something Or say something silly? I would love for you to add me & I'll include whatever you want!",
+		"Would you like to Advertise something Or say something silly?",
 		"@ ready41"
 	},
 	{
@@ -9,7 +9,7 @@ local Table={
 		"-- -- -- -- -- -- -- - made this -- -- -- -- -- -- --"
 	},
 	{
-		"Would you like to Advertise something Or say something silly? I would love for you to add me & I'll include whatever you want!",
+		"Would you like something to say Or just give a message out there?",
 		"@ ready41"
 	},
 	{
@@ -17,7 +17,7 @@ local Table={
 		"- - @ready41 - -"
 	},
 	{
-		"Would you like to Advertise something Or say something silly? I would love for you to add me & I'll include whatever you want!",
+		"I'll include whatever you want to say!",
 		"@ ready41"
 	}
 }

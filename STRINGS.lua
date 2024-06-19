@@ -9,7 +9,7 @@ local Table={
 		"-- -- -- -- -- -- -- - made this -- -- -- -- -- -- --"
 	},
 	{
-		"Would you like something to say Or just give a message out there?",
+		"Would you like something to say Or just get a message out there?",
 		"@ ready41"
 	},
 	{

@@ -44,7 +44,7 @@ Funk = function(pqs, Original)
 		local num = 0
 		local rndd = math.random(1, 5)
 		local rand = math.random(1, 3)
-		local rng = math.random(8, 25)
+		local rng = math.random(5, 30)
 		local timeee = tick()
 		repeat task.wait()
 			pcall(function()

@@ -82,6 +82,7 @@ spawn(function()
 		if tick()-tik >= 6 then tik = tick()
 			local rnp = tablef[math.random(1, #tablef)]
 			for _, z in pairs(rnp) do
+				task.wait()
 				chatMessage(z)
 			end
 		end

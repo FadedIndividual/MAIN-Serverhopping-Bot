@@ -3,7 +3,7 @@ local lp = Players.LocalPlayer
 
 local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 lp.OnTeleport:Connect(function() queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/jaded.lua'))()") end)
-local Animation, Anim, Banging = Instance.new("Animation", game.ReplicatedStorage), nil, nil
+local Animation, Anim, Banging, rngg = Instance.new("Animation", game.ReplicatedStorage), nil, nil, (math.random(9, 19) + 35)
 Animation.AnimationId = "rbxassetid://5918726674"
 
 spawn(function()
@@ -87,7 +87,7 @@ spawn(function()
 				chatMessage(z)
 			end
 		end
-		if tick() - Tick >= 20 then Tick = tick()
+		if tick() - Tick >= rngg then Tick = tick()
 			tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/STRINGS.lua'))()
 		end
 	end

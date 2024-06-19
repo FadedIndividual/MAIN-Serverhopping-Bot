@@ -11,6 +11,10 @@ local Table={
 	{
 		"-|BLUE|- -|Ghost|- -|App|-",
 		"- - @ready41 - -"
+	},
+	{
+		"-|BLUE|- -|Ghost|- -|App|-",
+		"[SALE] Robux $4/1k  |  @ NETSPEND123"
 	}
 }
 return Table

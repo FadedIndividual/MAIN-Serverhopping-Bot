@@ -1,6 +1,10 @@
 setfpscap(18)
 local Table={
 	{
+		"Would you like to Advertise something Or say something silly? I would love for you to add me & I'll include whatever you want!",
+		"@ ready41"
+	},
+	{
 		"-- -- -- -- -- -- -- -- ready41 - -- -- -- -- -- -- -",
 		"-- -- -- -- -- -- -- - made this -- -- -- -- -- -- --"
 	},

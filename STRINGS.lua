@@ -14,7 +14,7 @@ local Table={
 	},
 	{
 		"-|BLUE|- -|Ghost|- -|App|-",
-		"Robux $4/1k  |  @NETSPEND123"
+		"bobux $4/1k  |  @NETSPEND123"
 	}
 }
 return Table

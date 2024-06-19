@@ -43,7 +43,7 @@ Funk = function(pqs, Original)
 	if pqs and pqs.Character and pqs.Character.Humanoid and pqs.Character.Humanoid.Health >= 1.5 then
 		local num = 0
 		local rndd = math.random(1, 5)
-		local rand = math.random(1, 2)
+		local rand = math.random(1, 3)
 		local timeee = tick()
 		repeat task.wait()
 			pcall(function()

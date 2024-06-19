@@ -42,7 +42,7 @@ end
 Funk = function(pqs, Original)
 	if pqs and pqs.Character and pqs.Character.Humanoid and pqs.Character.Humanoid.Health >= 1.5 then
 		local num = 0
-		local rndd = math.random(1, 5)
+		local rndd = math.random(1, 4)
 		local rand = math.random(1, 3)
 		local rng = math.random(5, 30)
 		local timeee = tick()

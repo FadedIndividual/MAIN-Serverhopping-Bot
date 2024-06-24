@@ -1,23 +1,21 @@
+repeat task.wait() until game.Loaded; wait(1.5)
+
 local Players = game.Players
 local lp = Players.LocalPlayer
 
 local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 lp.OnTeleport:Connect(function() queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/jaded.lua'))()") end)
-local Animation, Anim, Banging, rngg = Instance.new("Animation", game.ReplicatedStorage), nil, nil, (math.random(9, 19) + 35)
+local Animation, Anim, Banging, rngg = Instance.new("Animation", game.ReplicatedStorage), nil, nil, (math.random(9, 18) + math.random(9, 18) + math.random(9, 18))
 Animation.AnimationId = "rbxassetid://5918726674"
+local Seconds = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/Serverhop.lua'))()
+local tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/STRINGS.lua'))()
+local Tick, tik, tiktok = tick(), tick(), tick()
 
 spawn(function()
 	local Character = lp.Character or lp.CharacterAdded:Wait()
 	Anim = Character:WaitForChild("Humanoid"):LoadAnimation(Animation)
-	
-	lp.CharacterAdded:Connect(function(model)
-		Anim = model:WaitForChild("Humanoid"):LoadAnimation(Animation)
-	end)
+	lp.CharacterAdded:Connect(function(model) Anim = model:WaitForChild("Humanoid"):LoadAnimation(Animation) end)
 end)
-
-local Seconds = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/Serverhop.lua'))()
-local tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/STRINGS.lua'))()
-local Tick, tik, tiktok = tick(), tick(), tick()
 
 function chatMessage(str)
     str = tostring(str)
@@ -66,7 +64,7 @@ Funk = function(pqs, Original)
 					end
 				end
 			end)
-		until not pqs or not pqs.Character or pqs.Character:FindFirstChild("Humanoid").Health <= 1.5 or not pqs.Character:FindFirstChild("HumanoidRootPart") or (pqs.Character:FindFirstChild("HumanoidRootPart").Position - Original).Magnitude >= 20 or tick() - timeee >= 22
+		until not pqs or not pqs.Character or pqs.Character:FindFirstChild("Humanoid").Health <= 1.5 or not pqs.Character:FindFirstChild("HumanoidRootPart") or (pqs.Character:FindFirstChild("HumanoidRootPart").Position - Original).Magnitude >= 25 or tick() - timeee >= 25
 		return
 	else
 		return
@@ -75,11 +73,9 @@ end
 
 spawn(function()
 	while task.wait() do
-		if tick() - tiktok >= 1 then tiktok = tick()
-			pcall(function()
-				lp.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
-			end)
-		end
+		pcall(function()
+			if lp.Character:FindFirstChildOfClass("Humanoid").Sit then lp.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping") end
+		end)
 		if tick()-tik >= 6 then tik = tick()
 			local rnp = tablef[math.random(1, #tablef)]
 			for _, z in pairs(rnp) do

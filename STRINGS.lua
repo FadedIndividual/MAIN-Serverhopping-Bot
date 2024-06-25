@@ -5,12 +5,16 @@ local Table={
 		" @ ready41 "
 	},
 	{
-		"-| 🟦 |-      -| 👻 |-",
-		"-|A P P|-@ready41-|A P P|-"
+		"E-Boys & E-Girls! I own every single one of you 🤡",
+		"-| 🟦 |- @ready41 -| 📲 |-"
+	},
+	{
+		"-| 🟦 |- @ready41 -| 📲 |-",
+		"-| 🟦 |- @ready41 -| 📲 |-"
 	},
 	{
 		"I'll include whatever you want to say!",
-		"ready41 "
+		" @ ready41 "
 	},
 	{
 		"@fattii2 to join freak👅 dizhurd /PNtFRfQt",

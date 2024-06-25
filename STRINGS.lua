@@ -2,7 +2,7 @@ setfpscap(20)
 local Table={
 	{
 		"Would you like to run an AD (a msg on the bot) Or say something silly?",
-		"ready41 "
+		" @ ready41 "
 	},
 	{
 		"-| 🟦 |-      -| 👻 |-",

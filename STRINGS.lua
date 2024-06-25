@@ -25,7 +25,7 @@ local Table={
 		"@fattii2 to join freak👅 dizhurd /PNtFRfQt"
 	},
 	{
-		"https://www.roblox.com/groups/7639105/Devils-For-Glory! check it out for actual good clothes,
+		"https://www.roblox.com/groups/7639105/Devils-For-Glory! check it out for actual good clothes",
 		"https://www.roblox.com/groups/7639105/Devils-For-Glory! check it out for actual good clothes"
 	}
 }

@@ -6,7 +6,7 @@ local Table={
 	},
 	{
 		"E-Boys & E-Girls! I own every single one of you 🤡",
-		"ready41 -| 🟦 App |-"
+		" @ ready41"
 	},
 	{
 		"I'll include whatever you want to say!",
@@ -19,6 +19,10 @@ local Table={
 	{
 		"@fattii2 join freak👅 dizhurd /PNtFRfQt",
 		"@fattii2 join freak👅 dizhurd /PNtFRfQt"
+	}.
+	{
+		"[🔵] APP",
+		"[🟦] APP"
 	}
 }
 return Table

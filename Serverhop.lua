@@ -7,7 +7,7 @@ spawn(function()
 		end
 		wait((math.random(1, 2)==1 and .75 or 1.25))
 	end
-	setfpscap(27)
+	setfpscap(30)
 	local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
 	local servers = {}
 	local req = httprequest({Url = string.format("https://games.roblox.com/v1/games/%d/servers/Public?sortOrder=Desc&limit=100&excludeFullGames=true", game.PlaceId)})

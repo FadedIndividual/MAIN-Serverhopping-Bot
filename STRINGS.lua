@@ -22,7 +22,7 @@ local Table={
 	},
 	{
 		"[🔵] APP",
-		"[🟦] APP"
+		" @ ready41 "
 	}
 }
 return Table

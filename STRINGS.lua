@@ -13,10 +13,6 @@ local Table={
 		"@ ready41"
 	},
 	{
-		"-|BLUE|- -|Ghost|- -|App|-",
-		"_  _  _ @ ready41 _  _  _"
-	},
-	{
 		"I'll include whatever you want to say!",
 		"@ ready41"
 	}

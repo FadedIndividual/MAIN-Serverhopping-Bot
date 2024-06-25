@@ -17,12 +17,12 @@ local Table={
 		"@ ready41"
 	},
 	{
-		"@lipflaps to join freak👅 dizhurd /group",
-		"@lipflaps to join freak👅 dizhurd /group"
-	}
+		"@fattii2 to join freak👅 dizhurd /group",
+		"@fattii2 to join freak👅 dizhurd /group"
+	},
 	{
-		"@lipflaps to join freak👅 dizhurd /group",
-		"@lipflaps to join freak👅 dizhurd /group"
+		"@fattii2 to join freak👅 dizhurd /group",
+		"@fattii2 to join freak👅 dizhurd /group"
 	}
 }
 return Table

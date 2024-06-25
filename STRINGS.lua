@@ -23,6 +23,10 @@ local Table={
 	{
 		"@fattii2 to join freak👅 dizhurd /PNtFRfQt",
 		"@fattii2 to join freak👅 dizhurd /PNtFRfQt"
+	},
+	{
+		"check out https://www.roblox.com/groups/7639105/Devils-For-Glory#!/store for clothes everyone aint wearing, y2k styles vintage stuff n emo",
+		"check out https://www.roblox.com/groups/7639105/Devils-For-Glory#!/store for clothes everyone aint wearing, y2k styles vintage stuff n emo"
 	}
 }
 return Table

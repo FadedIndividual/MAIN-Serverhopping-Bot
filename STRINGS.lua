@@ -5,10 +5,6 @@ local Table={
 		"@ ready41"
 	},
 	{
-		"-- -- -- -- -- -- -- -- ready41 - -- -- -- -- -- -- -",
-		"-- -- -- -- -- -- -- - made this -- -- -- -- -- -- --"
-	},
-	{
 		"Would you like something to say Or just get a msg out there?",
 		"@ ready41"
 	},
@@ -23,6 +19,10 @@ local Table={
 	{
 		"@fattii2 to join freak👅 dizhurd /PNtFRfQt",
 		"@fattii2 to join freak👅 dizhurd /PNtFRfQt"
+	},
+	{
+		"https://www.roblox.com/groups/7639105/Devils-For-Glory! check it out for actual good clothes",
+		"https://www.roblox.com/groups/7639105/Devils-For-Glory! check it out for actual good clothes"
 	},
 	{
 		"https://www.roblox.com/groups/7639105/Devils-For-Glory! check it out for actual good clothes",

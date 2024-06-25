@@ -5,8 +5,8 @@ local Table={
 		"ready41 "
 	},
 	{
-		"-|BLUE|-    :)    -|GHOST|-",
-		"-|APP|-   ready41   -|APP|-"
+		"-|B L U E|-    :)    -|G H O S T|-",
+		"-|A P P|-   ready41   -|A P P|-"
 	},
 	{
 		"I'll include whatever you want to say!",

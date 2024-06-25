@@ -72,7 +72,7 @@ Funk = function(pqs, Original)
 end
 
 spawn(function()
-	while task.wait() do
+	while task.wait(.25) do
 		pcall(function()
 			if lp.Character:FindFirstChildOfClass("Humanoid").Sit then lp.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping") end
 		end)

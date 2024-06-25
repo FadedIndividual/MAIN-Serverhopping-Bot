@@ -41,17 +41,23 @@ Funk = function(pqs, Original)
 	if pqs and pqs.Character and pqs.Character.Humanoid and pqs.Character.Humanoid.Health >= 1.5 then
 		local num = 0
 		local rndd = math.random(1, 4)
-		local rand = math.random(1, 3)
+		local rand = math.random(1, 4)
 		local rng = math.random(5, 30)
 		local timeee = tick()
 		repeat task.wait()
 			pcall(function()
 				num = num + rng
+				if num >= 360 then num = 0 end
 				local Ours, Theirs = lp.Character:FindFirstChild("HumanoidRootPart"), pqs.Character:FindFirstChild("HumanoidRootPart")
 				
 				if Ours and Theirs then
 					if rand == 1 then
 						spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(num), 0) * CFrame.new(0, 0, rndd) spawn(Funk_RV)
+						pcall(function()
+							Anim:Stop()
+						end)
+					elseif rand == 2 then
+						spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(0), 45) * CFrame.new(0, num/25, 0) spawn(Funk_RV)
 						pcall(function()
 							Anim:Stop()
 						end)

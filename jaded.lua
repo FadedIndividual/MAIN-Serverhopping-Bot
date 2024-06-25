@@ -57,14 +57,14 @@ Funk = function(pqs, Original)
 							Anim:Stop()
 						end)
 					elseif rand == 2 then
-						spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(0), 45) * CFrame.new(0, num/25, 0) spawn(Funk_RV)
+						spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(90, math.rad(0), 0) * CFrame.new(0, (math.random(1, 2)==1 and (num/45) or -(num/45)), 0) spawn(Funk_RV)
 						pcall(function()
 							Anim:Stop()
 						end)
 					else
 						pcall(function()
 							Anim:Play()
-							Anim:AdjustSpeed(10)
+							Anim:AdjustSpeed(6)
 						end)
 						spawn(Funk_RV) Ours.CFrame = Theirs.CFrame * CFrame.Angles(0, math.rad(0), 0) * CFrame.new(0, -1, .85) spawn(Funk_RV)
 					end

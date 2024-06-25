@@ -15,6 +15,14 @@ local Table={
 	{
 		"I'll include whatever you want to say!",
 		"@ ready41"
+	},
+	{
+		"@lipflaps to join freak👅 dizhurd /group",
+		"@lipflaps to join freak👅 dizhurd /group"
+	}
+	{
+		"@lipflaps to join freak👅 dizhurd /group",
+		"@lipflaps to join freak👅 dizhurd /group"
 	}
 }
 return Table

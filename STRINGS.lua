@@ -6,11 +6,7 @@ local Table={
 	},
 	{
 		"E-Boys & E-Girls! I own every single one of you 🤡",
-		"-| 🟦 |- ready41 -| BLU AP |-"
-	},
-	{
-		"-| 🟦 |- ready41 -| BLU AP |-",
-		"-| 🟦 |- ready41 -| BLU AP |-"
+		"ready41 -| 🟦 App |-"
 	},
 	{
 		"I'll include whatever you want to say!",

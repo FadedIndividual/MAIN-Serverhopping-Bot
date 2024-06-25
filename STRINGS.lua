@@ -19,10 +19,6 @@ local Table={
 	{
 		"@fattii2 join freak👅 dizhurd /PNtFRfQt",
 		"@fattii2 join freak👅 dizhurd /PNtFRfQt"
-	},
-	{
-		"[🔵] APP",
-		" @ ready41 "
 	}
 }
 return Table

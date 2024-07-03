@@ -7,8 +7,8 @@ local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (f
 lp.OnTeleport:Connect(function() queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/jaded.lua'))()") end)
 local Animation, Anim, Banging, rngg = Instance.new("Animation", game.ReplicatedStorage), nil, nil, (math.random(9, 18) + math.random(9, 18) + math.random(9, 18))
 Animation.AnimationId = "rbxassetid://5918726674"
-local Seconds = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/Serverhop.lua'))()
-local tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/My-Own-Scripts/main/STRINGS.lua'))()
+local Seconds = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/MAIN-Serverhopping-Bot/main/Serverhop.lua'))()
+local tablef = loadstring(game:HttpGet('https://raw.githubusercontent.com/FadedIndividual/MAIN-Serverhopping-Bot/main/STRINGS.lua'))()
 local Tick, tik, tiktok = tick(), tick(), tick()
 
 spawn(function()

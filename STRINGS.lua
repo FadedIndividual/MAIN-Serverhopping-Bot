@@ -5,20 +5,8 @@ local Table={
 		" @ ready41 "
 	},
 	{
-		"E-Boys & E-Girls! I own every single one of you 🤡",
-		" @ ready41"
-	},
-	{
 		"I'll include whatever you want to say!",
 		" @ ready41 "
-	},
-	{
-		"@fattii2 join freak👅 dizhurd /PNtFRfQt",
-		"@fattii2 join freak👅 dizhurd /PNtFRfQt"
-	},
-	{
-		"@fattii2 join freak👅 dizhurd /PNtFRfQt",
-		"@fattii2 join freak👅 dizhurd /PNtFRfQt"
 	}
 }
 return Table
